@@ -20,23 +20,25 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid justify-content-center p-0">
+<!--Top visible part of navbar-->
         <div class="navbar-brand">
             <i class="fab fa-android fa-lg"></i> <!-- Android icon -->
              I was but a wee babe
         </div>
+<!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <!--Navigation Bar List-->
-            <ul class="navbar-nav align-items-center list-group-flush mt-1 bg-success-subtle">
-                <li class="nav-item border-bottom">
+<!-- Collapsable Navigation Bar List-->
+            <ul class="navbar-nav align-items-center bg-success-subtle">
+                <li id="nav_list1">
                     <a class="nav-link" aria-current="page" href="#">This is the first line</a>
                 </li>
-                <li class="nav-item border-bottom">
+                <li id="nav_list2">
                     <a class="nav-link" href="#">This is the second line</a>
                 </li>
-                <li class="nav-item border-bottom">
+                <li id="nav_list3">
                     <a class="nav-link" href="#">This may be the last line</a>
                 </li>
             </ul>
@@ -76,10 +78,16 @@
 </div>
 <!-- JavaScript for grouping bootstrap classes-->
 <script>
+<!--  Code to reuse the class based styling from Bootstrap5  -->
     const cardStyle = 'card ms-1 m-2 border-4 border-success-subtle shadow-lg';
     document.getElementById('card1').className = cardStyle;
     document.getElementById('card2').className = cardStyle;
     document.getElementById('card3').className = cardStyle;
+//     To reuse the nav bar item styling
+    const Nav_ListStyle = 'nav-item border-bottom border-3 border-light';
+    document.getElementById('nav_list1').className = Nav_ListStyle;
+    document.getElementById('nav_list2').className = Nav_ListStyle;
+    document.getElementById('nav_list3').className = Nav_ListStyle;
 </script>
 </body>
 </html>
